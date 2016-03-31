@@ -45,3 +45,17 @@ u.setAttr = function setAttr(node,key,value) {
 	}
 };
 
+u.ready = function ready(fn) {
+	if(document.readyState !== 'loading') {
+		fn();
+	}else if(document.addEventListener) {
+		document.addEventListener('DOMContentLoad',fn);
+	}else {
+		document.attachEvent('onreadystatechange',function () {
+			if(document.readyState !== 'loading') {
+				fn();
+			}
+		})
+	}
+}
+
