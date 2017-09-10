@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Materialize css</title>
+	<style>
+		.demo-block {
+			border: 1px solid #e3e3e3;
+			padding: 20px;
+			border-radius: 3px;
+		}
+
+		.demo-block h1 {
+			border-bottom: 1px solid #e3e3e3;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper blue">
+			<a href="javascript:void(0)" class="brand-logo">
+				Logo
+			</a>
+			<ul class="right hide-on-med-and-down" id="nav-mobile">
+				<li>
+					<a href="javascript:void(0)">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">About</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<nav>
+		<div class="nav-wrapper green">
+			<a href="javascript:void(0)" class="brand-logo center">
+				Logo
+			</a>
+			<ul class="right hide-on-med-and-down" id="nav-mobile">
+				<li>
+					<a href="javascript:void(0)">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">About</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- with dropdown -->
+	<nav>
+		<div class="nav-wrapper red">
+			<a href="javascript:void(0)" class="brand-logo center">
+				Logo
+			</a>
+			<ul class="right hide-on-med-and-down" id="nav-mobile">
+				<li>
+					<a href="javascript:void(0)">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">About</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Contact</a>
+				</li>
+				<li>
+					<a class="dropdown-button" data-activates="dropdown1" href="javascript:void(0)">
+						Dropdown<i class="material-icons right">arrow_drop_down</i>
+					</a>
+					<ul id="dropdown1" class="dropdown-content">
+						<li><a href="javascript:void(0)">link1</a></li>
+						<li><a href="javascript:void(0)">link2</a></li>
+						<li><a href="javascript:void(0)">link3</a></li>
+						<li class="divider"></li>
+						<li><a href="javascript:void(0)">link4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- icons & button in nav-->
+	<nav>
+		<div class="nav-wrapper black">
+			<a href="javascript:void(0)" class="brand-logo left">
+				Logo
+			</a>
+			<ul class="right hide-on-med-and-down" id="nav-mobile">
+				<li>
+					<a href="javascript:void(0)"><i class="material-icons">search</i></a>
+				</li>
+				<li class="waves-effect waves-light">
+					<a href="javascript:void(0)"><i class="material-icons left">apps</i>home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">About</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Contact</a>
+				</li>
+				<li>
+					<a class="waves-effect waves-light btn yellow" href="javascript:void(0)">SignUp</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="javascript:void(0)" class="brand-logo center">
+				Logo
+			</a>
+			<a href="javascript:void(0)" data-activates="mobile-demo" class="right button-collapse">
+				<i class="material-icons">menu</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a href="javascript:void(0)">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">About</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Contact</a>
+				</li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li>
+					<a href="javascript:void(0)">Home</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">About</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<br />
+	<div class="container">
+		<div class="row demo-block">
+			<h1>SearchBar</h1>
+			<nav>
+				<div class="nav-wrapper">
+					<form action="">
+						<div class="input-field">
+							<input type="search" id="search" required>
+							<label class="label-icon" for="search">
+								<i class="material-icons">search</i>
+							</label>
+							<i class="material-icons">close</i>
+						</div>
+					</form>
+				</div>
+			</nav>
+		</div>
+		<div class="row demo-block">
+			<h1>Colors</h1>
+			<div class="red white-text">div with red color</div>
+			<div class="blue blue-text darken-4">div with red color</div>
+			<div class="deep-purple white-text lighten-3">div with red color</div>
+		</div>
+		<div class="row demo-block">
+			<h1>Buttons</h1>
+			<button class="btn">Read More</button>
+			<button class="btn waves-effect">Read More</button>
+			<button class="btn waves-effect waves-light">Read More</button>
+			<hr/>
+			<button class="btn btn-large">Read More</button>
+			<button class="btn disabled">Read More</button>
+			<button class="btn red">Read More</button>
+			<button class="btn red lighten-3">Read More</button>
+			<h4>Button with icon</h4>
+			<button class="btn blue lighten-3"><i class="material-icons left">cloud</i>Read More</button>
+			<h4>Floating Button</h4>
+			<a href="javascript:void(0)" class="btn-floating red btn-large">
+				<i class="material-icons">add</i>
+			</a>
+			<!-- Fixed Action Button-->
+			<div class="fixed-action-btn">
+				<a href="javascript:void(0)" class="btn-floating red btn-large">
+					<i class="material-icons">mode_edit</i>
+				</a>
+				<ul>
+					<li>
+						<a href="javascript:void(0)" class="btn-floating sky-blue btn-large">
+							<i class="material-icons">insert_chart</i>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="btn-floating blue btn-large">
+							<i class="material-icons">format_qoute</i>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="btn-floating green btn-large">
+							<i class="material-icons">publish</i>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="btn-floating orange btn-large">
+							<i class="material-icons">attach_file</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<h4>Flat Button</h4>
+			<a href="javascript:void(0)" class="waves-effect waves-black btn-flat">Button</a>
+		</div>
+		<div class="row demo-block">
+			<h1>Helpers</h1>
+			<div>
+				<h5 class="left-align">This aligns to the left</h5>
+				<h5 class="center-align">This aligns to the center</h5>
+				<h5 class="right-align">This aligns to the right</h5>
+			</div>
+			<!-- float helper-->
+			<div class="left red white-text">block float left</div>
+			<div class="right blue white-text">block float right</div>
+			<!-- hide content-->
+			<div class="clearfix">
+				<div class="hide">Hidden for all devices</div>
+				<div class="hide-on-small-only">Hidden for mobile devices</div>
+				<div class="hide-on-large-only">Hidden for desktop</div>
+				<div class="hide-on-med-only">Hidden for tablet devices</div>
+				<div class="hide-on-med-and-down">Hidden for tablets and samller</div>
+				<div class="hide-on-med-and-up">Hidden for tablets and bigger</div>
+			</div>
+			<!-- truncate -->
+			<h4 class="truncate">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Cras ultricies
+				ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur
+				adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt.
+				Sed porttitor lectus nibh. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</h4>
+			<hr/>
+			<h4>Effect</h4>
+			<!-- hoverable and pulse-->
+			<div class="blue white-text hoverable"> Hoverable content</div>
+			<div class="red white-text _pulse"> Pulse content</div>
+			<!-- shadow -->
+			<p class="z-depth-1">z-depth-1</p>
+			<p class="z-depth-2">z-depth-2</p>
+			<p class="z-depth-3">z-depth-3</p>
+			<p class="z-depth-4">z-depth-4</p>
+			<p class="z-depth-5">z-depth-5</p>
+			<!-- float text -->
+			<p class="flow-text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque mollitia architecto laboriosam aliquid eaque corporis odio.
+				Autem harum, adipisci, sunt a reiciendis placeat veritatis assumenda consequatur voluptates culpa aperiam nam?
+			</p>
+			<!-- responsive image -->
+			<img class="responsive-img" src="./cat_1920.jpg" alt="pisture of cat">
+			<img class="responsive-img circle" src="./cat_1920.jpg" alt="pisture of cat">
+		</div>
+	</div>
+	<!-- container -->
+	<!-- Collection/List -->
+	<div class="container">
+		<div class="row demo-block">
+			<h1>Collection/List</h1>
+			<ul class="collection">
+				<li class="collection-item">Item 1</li>
+				<li class="collection-item">Item 2</li>
+				<li class="collection-item">Item 3</li>
+				<li class="collection-item">Item 4</li>
+			</ul>
+			<!-- Links Collection -->
+			<div class="collection">
+				<a href="javascript:void(0)" class="collection-item">Link 1</a>
+				<a href="javascript:void(0)" class="collection-item">Link 2</a>
+				<a href="javascript:void(0)" class="collection-item">Link 3</a>
+				<a href="javascript:void(0)" class="collection-item">Link 4</a>
+			</div>
+			<!-- Collection with header-->
+			<ul class="collection with-header">
+				<li class="collection-item">
+					<h4>Collection header</h4>
+				</li>
+				<li class="collection-item">Item 1</li>
+				<li class="collection-item">Item 2</li>
+				<li class="collection-item">Item 3</li>
+			</ul>
+			<!--Collection with icon-->
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<img src="images/yuna.jpg" alt="" class="circle">
+					<span class="title">Title</span>
+					<p>First Line <br> Second Line
+					</p>
+					<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle">folder</i>
+					<span class="title">Title</span>
+					<p>First Line <br> Second Line
+					</p>
+					<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle green">insert_chart</i>
+					<span class="title">Title</span>
+					<p>First Line <br> Second Line
+					</p>
+					<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle red">play_arrow</i>
+					<span class="title">Title</span>
+					<p>First Line <br> Second Line
+					</p>
+					<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="row demo-block">
+			<h1>Pagination</h1>
+			<ul class="pagination">
+				<li class="disabled">
+					<a href="#!">
+						<i class="material-icons">chevron_left</i>
+					</a>
+				</li>
+				<li class="active"><a href="#">1</a></li>
+				<li class="waves-effect"><a href="#">2</a></li>
+				<li class="waves-effect"><a href="#">3</a></li>
+				<li class="waves-effect"><a href="#">4</a></li>
+				<li class="waves-effect"><a href="#">5</a></li>
+				<li class="waves-effect"><a href="#">6</a></li>
+				<li class="waves-effect">
+					<a href="#!">
+						<i class="material-icons">chevron_right</i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row demo-block">
+			<h1>BreadCrumbs</h1>
+			<nav>
+				<div class="col s12">
+					<a href="#!" class="breadcrumb">First</a>
+					<a href="#!" class="breadcrumb">Second</a>
+					<a href="#!" class="breadcrumb">Third</a>
+				</div>
+			</nav>
+		</div>
+		<div class="row demo-block">
+			<h1>Cards</h1>
+			<!-- normal card -->
+			<div class="row">
+				<div class="col s12 m6">
+					<div class="card blue darken-1">
+						<div class="card-content white-text">
+							<span class="card-title">Card Title</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur eum deserunt cum explicabo voluptas, mollitia
+								labore officia voluptatum repellat vel vitae dolore incidunt minus earum! At officiis, dolore error.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- image card -->
+			<div class="row">
+				<div class="col s12 m7">
+					<div class="card">
+						<div class="card-image">
+							<img src="./view_1920.jpg">
+							<span class="card-title">Card Title</span>
+						</div>
+						<div class="card-content">
+							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+								markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- image card with float btn-->
+			<div class="row">
+				<div class="col s12 m7">
+					<div class="card">
+						<div class="card-image">
+							<img src="./view_1920.jpg">
+							<span class="card-title">Card Title</span>
+							<a href="javascript:void(0)" class="btn-floating halfway-fab waves-effect waves-light blue">
+								<i class="material-icons">add</i>
+							</a>
+						</div>
+						<div class="card-content">
+							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+								markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- horizontal card-->
+			<div class="col s12 m7">
+				<div class="card horizontal">
+					<div class="card-image">
+						<img src="http://lorempixel.com/100/190/nature/6">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>I am a very simple card. I am good at containing small bits of information.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card panel -->
+			<div class="row">
+				<div class="col s12 m5">
+					<h5>Card Panel</h5>
+					<div class="card-panel teal">
+						<span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+          </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row demo-block">
+			<h1>Chips</h1>
+			<div class="chip">
+				<img src="./boy-1.svg" alt="Contact Person"> Jane Doe
+			</div>
+			<div class="chip">
+				Tag
+				<i class="close material-icons">close</i>
+			</div>
+		</div>
+		<div class="row demo-block">
+			<h1>Forms</h1>
+			<form action="">
+				<div class="input-field">
+					<input type="text" id="name">
+					<label class="active" for="name">Name</label>
+				</div>
+				<div class="input-field">
+					<input class="validate" type="email" id="eamil">
+					<label class="active" for="eamil">Email</label>
+				</div>
+				<div class="input-field">
+					<textarea class="materialize-textarea" id="textarea"></textarea>
+					<label class="active" for="textarea">Textarea</label>
+				</div>
+			</form>
+		</div>
+		<div class="row demo-block">
+			<h1>Preloaders</h1>
+			<div class="progress">
+				<div class="determinate" style="width:70%;"></div>
+			</div>
+			<div class="progress">
+				<div class="indeterminate" style="width:70%;"></div>
+			</div>
+			<!-- CIRCULAR -->
+			<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-red-only">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row demo-block">
+			<h1>Grid System</h1>
+			<div class="row">
+				<div class="col s1">
+					<div class="card-panel grey white-text">1</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">2</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">3</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">4</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">5</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">6</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">7</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">8</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">9</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">10</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">11</div>
+				</div>
+				<div class="col s1">
+					<div class="card-panel grey white-text">12</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s8">
+					<div class="card-panel grey white-text">8</div>
+				</div>
+				<div class="col s4">
+					<div class="card-panel grey white-text">4</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s4">
+					<div class="card-panel grey white-text">4</div>
+				</div>
+				<div class="col s4">
+					<div class="card-panel grey white-text">4</div>
+				</div>
+				<div class="col s4">
+					<div class="card-panel grey white-text">4</div>
+				</div>
+			</div>
+			<!-- Offsetting -->
+			<div class="row">
+				<div class="col s12">
+					<div class="card-panel grey white-text">12</div>
+				</div>
+				<div class="col s6 offset-s3">
+					<div class="card-panel grey white-text">6 and offset 3</div>
+				</div>
+			</div>
+			<!-- Push and Pull -->
+			<div class="row">
+				<div class="col s7 push-s5">
+					<div class="card-panel grey white-text">7 and be push</div>
+				</div>
+				<div class="col s5 pull-s7">
+					<div class="card-panel grey white-text">5 and be pull</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="height:500px"></div>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script>
+		$(".button-collapse").sideNav();
+	</script>
+</body>
+
+</html>
