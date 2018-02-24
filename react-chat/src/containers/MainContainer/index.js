@@ -1,11 +1,13 @@
 import React, { PureComponent, Fragment } from 'react';
-import { connect } from 'react-redux';
+import { graphql } from 'react-apollo';
 import { Header } from 'components';
 import { ContentContainer } from 'containers';
 import { ping } from '../../actions';
+import gql from 'graphql-tag';
 
 class MainContainer extends PureComponent {
   render () {
+    console.warn(this.props);
     return (
       <div className='main-container'>
         <Header/>
@@ -17,7 +19,14 @@ class MainContainer extends PureComponent {
   }
 }
 
-export default connect(
-  ({ isPinging }) => ({ isPinging }),
-  { ping }
-)(MainContainer)
+const mapQueriesToProps = (gql`
+  query {
+    allUsers {
+      id
+      email
+    }
+  }
+`);
+
+export default graphql(mapQueriesToProps)(MainContainer);
+
